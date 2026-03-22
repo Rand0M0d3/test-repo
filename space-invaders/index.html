@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Invaders</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+    }
+    canvas {
+      display: block;
+      border: 1px solid #1a1a1a;
+      image-rendering: pixelated;
+    }
+    #controls {
+      margin-top: 12px;
+      color: #444;
+      font-size: 13px;
+      text-align: center;
+      line-height: 1.8;
+    }
+    #controls span { color: #888; }
+  </style>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="controls">
+    <span>← →</span> Move &nbsp;|&nbsp; <span>Space</span> Fire &nbsp;|&nbsp; <span>P</span> Pause &nbsp;|&nbsp; <span>Enter</span> Start
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
